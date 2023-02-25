@@ -1,17 +1,1 @@
-{
-	"Start": {
-		"Choice": {
-			"Oh yeah?": "#TO asdasd"
-		},
-		"Text": "get ready for some crazy stuff",
-		"AddDialougeData":[ ["WantsSecret", 1, 0] ]
-	},
-	"asdasd": {
-		"Requirements":{"WantsSecret":1},
-		"Choice": {
-			"": "#END"
-		},
-		"Text": "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
-		"AddDialogueData":[ ["SSecretTold", 1, 0] ]
-	}
-}
+null

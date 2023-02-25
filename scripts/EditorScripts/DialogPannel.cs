@@ -5,7 +5,7 @@ using System;
 [Tool]
 public partial class DialogPannel : ScrollContainer
 {
-	VBoxContainer LineBlockStacker;
+	GraphEdit BlockGraphEditor;
 	PackedScene LineBlock;
 
 	Button AddLineBlockButton;
@@ -23,7 +23,7 @@ public partial class DialogPannel : ScrollContainer
 	{
 
 		TargetFilePathLineEdit = GetNode<LineEdit>("VBoxContainer2/HBoxContainer/TargetFileLineEdit");
-		LineBlockStacker = GetNode<VBoxContainer>("VBoxContainer2/LineBlockStacker");
+		BlockGraphEditor = GetNode<GraphEdit>("VBoxContainer2/GraphEdit");
 		LineBlock = GD.Load<PackedScene>("res://scenes/editor/LineBlock.tscn");
 
 		AddLineCallable = new Callable(this, nameof( AddLineBlock ));
@@ -52,7 +52,7 @@ public partial class DialogPannel : ScrollContainer
 	private String ExtractJsonFormat()
 	{
 		Dictionary<String,Dictionary<String,Variant> > Data = new();
-		foreach(Node Block in LineBlockStacker.GetChildren() )
+		foreach(Node Block in BlockGraphEditor.GetChildren() )
 		{
 			Data.Add( (String)Block.Call("_GetName"), (Dictionary<String,Variant>)Block.Call("_SaveLineData") );
 		}
@@ -100,7 +100,7 @@ public partial class DialogPannel : ScrollContainer
 
 		foreach(String BlockName in Joe.Keys)
 		{
-			HBoxContainer TargetBlock = AddLineBlock();
+			GraphNode TargetBlock = AddLineBlock();
 
 			TargetBlock.Call("_SetName",BlockName );
 
@@ -110,10 +110,10 @@ public partial class DialogPannel : ScrollContainer
 
 	}
 
-	private HBoxContainer AddLineBlock()
+	private GraphNode AddLineBlock()
 	{
-		HBoxContainer LineBlockInstance = LineBlock.Instantiate<HBoxContainer>();
-		LineBlockStacker.AddChild( LineBlockInstance );
+		GraphNode LineBlockInstance = LineBlock.Instantiate<GraphNode>();
+		BlockGraphEditor.AddChild( LineBlockInstance );
 
 		return LineBlockInstance;
 

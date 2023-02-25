@@ -33,5 +33,11 @@ text = "                Load                 "
 layout_mode = 2
 text = "  !Save!  "
 
-[node name="LineBlockStacker" type="VBoxContainer" parent="VBoxContainer2"]
+[node name="GraphEdit" type="GraphEdit" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(1100, 500)
+layout_direction = 1
 layout_mode = 2
+show_zoom_label = true
+minimap_size = Vector2(220, 160)
+minimap_opacity = 0.299
+arrange_nodes_button_hidden = true

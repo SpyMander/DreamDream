@@ -1,3 +1,8 @@
+TabBar
+TabContainer
+TextEdit
+GraphNode
+GraphEdit
 FogVolume
 MeshInstance3D
 CSGSphere3D
@@ -14,7 +19,6 @@ Node
 Area3D
 StaticBody3D
 AnimatableBody3D
-TextEdit
 Container
 Button
 HBoxContainer
@@ -27,7 +31,3 @@ Label
 VScrollBar
 Label3D
 HFlowContainer
-Control
-Node2D
-RemoteTransform3D
-CSGPolygon3D

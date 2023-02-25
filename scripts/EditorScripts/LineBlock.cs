@@ -3,14 +3,14 @@ using Godot.Collections;
 using System;
 
 [Tool]
-public partial class LineBlock : HBoxContainer
+public partial class LineBlock : GraphNode
 {
 	// Called when the node enters the scene tree for the first time.
 
 	
-	private Button DeleteButton;
+	// private Button DeleteButton;
 
-	private Button CollapseButton;
+	// private Button CollapseButton;
 	private Button AddChoiceButton;
 	private Button RemoveChoice;
 
@@ -19,6 +19,7 @@ public partial class LineBlock : HBoxContainer
 	private Callable DeleteBlockCallable;
 	private Callable ToggleCollapseCallable;
 	private Callable AddChoiceCallable;
+	private Callable ChangeTitleCallable;
 
 	private LineEdit LineNameEditor;
 
@@ -38,15 +39,16 @@ public partial class LineBlock : HBoxContainer
 
 	public override void _Ready()
 	{
-		DeleteButton = GetNode<Button>("DeleteButton");
+		// DeleteButton = GetNode<Button>("DeleteButton");
 
-		CollapseButton = GetNode<Button>("CollapseButton");
+		// CollapseButton = GetNode<Button>("CollapseButton");
 
 		LineNameEditor = GetNode<LineEdit>("LineNameEditor");
 
 		ChoicesBox = GetNode<VBoxContainer>("ChoicePannel/ChoicesBoxContainer/ChoicesBox");
 
 		AddChoiceButton = GetNode<Button>("ChoicePannel/ChoicesBoxContainer/ChoicesBox/ChoiceEditButtons/AddChoice");
+
 
 		LineTextEdit = GetNode<TextEdit>("LineTextEdit");
 
@@ -57,12 +59,16 @@ public partial class LineBlock : HBoxContainer
 
 		ToggleCollapseCallable = new Callable(this, nameof(ToggleCollapse));
 
+		ChangeTitleCallable = new Callable(this, nameof(_VisualTitleChange));
 
 		AddChoiceCallable = new Callable(this, nameof(AddChoice) );
 
-		CollapseButton.Connect("pressed", ToggleCollapseCallable);
+		this.Connect("close_request", DeleteBlockCallable);
 
-		DeleteButton.Connect("pressed", DeleteBlockCallable);
+		LineNameEditor.Connect("text_changed", ChangeTitleCallable);
+		// CollapseButton.Connect("pressed", ToggleCollapseCallable);
+
+		// DeleteButton.Connect("pressed", DeleteBlockCallable);
 
 		AddChoiceButton.Connect("pressed", AddChoiceCallable);
 	}
@@ -156,6 +162,11 @@ public partial class LineBlock : HBoxContainer
 	{
 		Collapsed = false;
 		this.CustomMinimumSize = new Vector2(0,MaxYSize);
+	}
+
+	private void _VisualTitleChange( String name )
+	{
+		this.Title = name;
 	}
 	
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

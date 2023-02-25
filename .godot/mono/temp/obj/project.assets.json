@@ -2,67 +2,75 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Godot.SourceGenerators/4.0.0-rc.1": {
+      "Godot.SourceGenerators/4.0.0-rc.5": {
         "type": "package",
         "build": {
           "build/Godot.SourceGenerators.props": {}
         }
       },
-      "GodotSharp/4.0.0-rc.1": {
+      "GodotSharp/4.0.0-rc.5": {
         "type": "package",
         "compile": {
-          "lib/net6.0/GodotSharp.dll": {}
+          "lib/net6.0/GodotSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/GodotSharp.dll": {}
+          "lib/net6.0/GodotSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
-      "GodotSharpEditor/4.0.0-rc.1": {
+      "GodotSharpEditor/4.0.0-rc.5": {
         "type": "package",
         "dependencies": {
-          "GodotSharp": "4.0.0-rc.1"
+          "GodotSharp": "4.0.0-rc.5"
         },
         "compile": {
-          "lib/net6.0/GodotSharpEditor.dll": {}
+          "lib/net6.0/GodotSharpEditor.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/GodotSharpEditor.dll": {}
+          "lib/net6.0/GodotSharpEditor.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
   },
   "libraries": {
-    "Godot.SourceGenerators/4.0.0-rc.1": {
-      "sha512": "48Z5xfHlnIGlj5uGP3roWUThtJkkY0SrWJfXiBZTPk6BaysFxSgBop8sBsyIujGlY5x62bmqR+4ZP7PWSHpT5A==",
+    "Godot.SourceGenerators/4.0.0-rc.5": {
+      "sha512": "Cdn7nh0ZfhkNiyFf3tXrUnZflAzyk44rFT5K9u0FeL4hjQ1wP0IVsTrnc/VJkKuVMdmtWHALYYlgJphHOcd9Ww==",
       "type": "package",
-      "path": "godot.sourcegenerators/4.0.0-rc.1",
+      "path": "godot.sourcegenerators/4.0.0-rc.5",
       "files": [
         ".nupkg.metadata",
         "analyzers/dotnet/cs/Godot.SourceGenerators.dll",
         "build/Godot.SourceGenerators.props",
-        "godot.sourcegenerators.4.0.0-rc.1.nupkg.sha512",
+        "godot.sourcegenerators.4.0.0-rc.5.nupkg.sha512",
         "godot.sourcegenerators.nuspec"
       ]
     },
-    "GodotSharp/4.0.0-rc.1": {
-      "sha512": "Pty10l6LAcCKepCG+LQkfonDMMDxYbn550ZZDg/0QkRq1aKv0bf6SGikYFxGN5JD/HRjljhpplGYyHdsFR7mBQ==",
+    "GodotSharp/4.0.0-rc.5": {
+      "sha512": "2waBd0jXEbvLk7aAqkf9HkybOsWZs8UdVQJsei96Vomt0zi11/xbubQo+sWMfUjXc+LT/WbACI7tzY05Ek4jyA==",
       "type": "package",
-      "path": "godotsharp/4.0.0-rc.1",
+      "path": "godotsharp/4.0.0-rc.5",
       "files": [
         ".nupkg.metadata",
-        "godotsharp.4.0.0-rc.1.nupkg.sha512",
+        "godotsharp.4.0.0-rc.5.nupkg.sha512",
         "godotsharp.nuspec",
         "lib/net6.0/GodotSharp.dll",
         "lib/net6.0/GodotSharp.xml"
       ]
     },
-    "GodotSharpEditor/4.0.0-rc.1": {
-      "sha512": "VeK5e6/4DuywqEk8p2fmEWa+REhWSzyXa5kble+9oJG3sln6K7SG2FMrQb8r7wns5+zp7oKRoCZN2IR3I/ty/A==",
+    "GodotSharpEditor/4.0.0-rc.5": {
+      "sha512": "8fuTy4yXCOa/uQLcOnkLQX/6bbBDK9GcQ6iuodtZgI58uUh6jgqNypdIgjllBdwLBaXI0fs8LgS9aUt/h/U6Aw==",
       "type": "package",
-      "path": "godotsharpeditor/4.0.0-rc.1",
+      "path": "godotsharpeditor/4.0.0-rc.5",
       "files": [
         ".nupkg.metadata",
-        "godotsharpeditor.4.0.0-rc.1.nupkg.sha512",
+        "godotsharpeditor.4.0.0-rc.5.nupkg.sha512",
         "godotsharpeditor.nuspec",
         "lib/net6.0/GodotSharpEditor.dll",
         "lib/net6.0/GodotSharpEditor.xml"
@@ -71,30 +79,30 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Godot.SourceGenerators >= 4.0.0-rc.1",
-      "GodotSharp >= 4.0.0-rc.1",
-      "GodotSharpEditor >= 4.0.0-rc.1"
+      "Godot.SourceGenerators >= 4.0.0-rc.5",
+      "GodotSharp >= 4.0.0-rc.5",
+      "GodotSharpEditor >= 4.0.0-rc.5"
     ]
   },
   "packageFolders": {
-    "/home/hivemind/.nuget/packages/": {},
-    "/home/hivemind/.local/share/godot/mono/GodotNuGetFallbackFolder": {}
+    "/home/discoelysium/.nuget/packages/": {},
+    "/home/discoelysium/.local/share/godot/mono/GodotNuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hivemind/games/godot/40DreamDream/40 Dream Dream.csproj",
+      "projectUniqueName": "/home/discoelysium/GameDevelopment/games/40DreamDream/40 Dream Dream.csproj",
       "projectName": "40 Dream Dream",
-      "projectPath": "/home/hivemind/games/godot/40DreamDream/40 Dream Dream.csproj",
-      "packagesPath": "/home/hivemind/.nuget/packages/",
-      "outputPath": "/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/",
+      "projectPath": "/home/discoelysium/GameDevelopment/games/40DreamDream/40 Dream Dream.csproj",
+      "packagesPath": "/home/discoelysium/.nuget/packages/",
+      "outputPath": "/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/home/hivemind/.local/share/godot/mono/GodotNuGetFallbackFolder"
+        "/home/discoelysium/.local/share/godot/mono/GodotNuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/hivemind/.nuget/NuGet/NuGet.Config",
-        "/home/hivemind/.nuget/NuGet/config/Godot.Offline.Config"
+        "/home/discoelysium/.nuget/NuGet/NuGet.Config",
+        "/home/discoelysium/.nuget/NuGet/config/Godot.Offline.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -120,15 +128,15 @@
         "dependencies": {
           "Godot.SourceGenerators": {
             "target": "Package",
-            "version": "[4.0.0-rc.1, )"
+            "version": "[4.0.0-rc.5, )"
           },
           "GodotSharp": {
             "target": "Package",
-            "version": "[4.0.0-rc.1, )"
+            "version": "[4.0.0-rc.5, )"
           },
           "GodotSharpEditor": {
             "target": "Package",
-            "version": "[4.0.0-rc.1, )"
+            "version": "[4.0.0-rc.5, )"
           }
         },
         "imports": [
@@ -137,16 +145,27 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.108/sdk/6.0.108/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }

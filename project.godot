@@ -120,6 +120,10 @@ dr_interact={
 ]
 }
 
+[input_devices]
+
+buffering/agile_event_flushing=true
+
 [layer_names]
 
 3d_physics/layer_2="Interact"

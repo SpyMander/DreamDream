@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "S3WztsbeeZNrAJZBE4UEzfA3OyDiTNCMCHde4r3ukDi3bNDdLWNkGyYo4fxqc94dW+fg7RPQxmjg/ab/MOZQIA==",
+  "dgSpecHash": "8NiZNRWas9gaz1kDdVsZMEabhG61RIMwFaRSplpBET03gq5rN6t5+w7VnzqQ4eVJn/iP6zVlYSt+EtHwMeRglA==",
   "success": true,
-  "projectFilePath": "/home/hivemind/games/godot/40DreamDream/40 Dream Dream.csproj",
+  "projectFilePath": "/home/discoelysium/GameDevelopment/games/40DreamDream/40 Dream Dream.csproj",
   "expectedPackageFiles": [
-    "/home/hivemind/.local/share/godot/mono/GodotNuGetFallbackFolder/godot.sourcegenerators/4.0.0-rc.1/godot.sourcegenerators.4.0.0-rc.1.nupkg.sha512",
-    "/home/hivemind/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharp/4.0.0-rc.1/godotsharp.4.0.0-rc.1.nupkg.sha512",
-    "/home/hivemind/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharpeditor/4.0.0-rc.1/godotsharpeditor.4.0.0-rc.1.nupkg.sha512"
+    "/home/discoelysium/.local/share/godot/mono/GodotNuGetFallbackFolder/godot.sourcegenerators/4.0.0-rc.5/godot.sourcegenerators.4.0.0-rc.5.nupkg.sha512",
+    "/home/discoelysium/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharp/4.0.0-rc.5/godotsharp.4.0.0-rc.5.nupkg.sha512",
+    "/home/discoelysium/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharpeditor/4.0.0-rc.5/godotsharpeditor.4.0.0-rc.5.nupkg.sha512",
+    "/home/discoelysium/.nuget/packages/microsoft.netcore.app.ref/6.0.14/microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "/home/discoelysium/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.14/microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
   ],
   "logs": []
 }

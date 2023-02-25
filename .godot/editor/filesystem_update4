@@ -1,4 +1,9 @@
-res://scenes/models/PlayerRobot.res
+res://scenes/editor/LineBlock.tscn
 res://scripts/objects/editor/Connecter.tres
 res://resources/Shaders/materials/RobotMetal.material
 res://resources/Shaders/Wood.tres
+res://scenes/editor/DialogPannel.tscn
+res://resources/dialog/Example2.json
+res://resources/dialog/Example.json
+res://resources/dialog/SampleDialog.json
+res://resources/dialog/SaveTestSeven.json

@@ -15,3 +15,20 @@
 /home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/ref/40 Dream Dream.dll
 /home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.pdb
 /home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.genruntimeconfig.cache
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.deps.json
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.runtimeconfig.json
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.dll
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.pdb
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.csproj.AssemblyReference.cache
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.GeneratedMSBuildEditorConfig.editorconfig
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.AssemblyInfoInputs.cache
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.AssemblyInfo.cs
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.csproj.CoreCompileInputs.cache
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.csproj.CopyComplete
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.dll
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/refint/40 Dream Dream.dll
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.pdb
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.genruntimeconfig.cache
+/home/discoelysium/GameDevelopment/games/40DreamDream/.godot/mono/temp/obj/Debug/ref/40 Dream Dream.dll
