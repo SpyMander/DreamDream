@@ -1,0 +1,17 @@
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.deps.json
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.runtimeconfig.json
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.dll
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/bin/Debug/ref/40 Dream Dream.dll
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/bin/Debug/40 Dream Dream.pdb
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.csproj.AssemblyReference.cache
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.GeneratedMSBuildEditorConfig.editorconfig
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.AssemblyInfoInputs.cache
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.AssemblyInfo.cs
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.csproj.CoreCompileInputs.cache
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.csproj.CopyComplete
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.dll
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/ref/40 Dream Dream.dll
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.pdb
+/home/hivemind/games/godot/40DreamDream/.godot/mono/temp/obj/Debug/40 Dream Dream.genruntimeconfig.cache

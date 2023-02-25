@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://cubao5cmgtgvp"]
+
+[ext_resource type="PackedScene" uid="uid://bshc17cjqms0d" path="res://scenes/models/PlayerRobot.res" id="1_dgxum"]
+[ext_resource type="Script" path="res://scripts/classes/Npc.cs" id="1_v1soc"]
+[ext_resource type="Script" path="res://scripts/classes/Interactable.cs" id="3_7xqwf"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g35ar"]
+height = 1.8
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_2p5cx"]
+length = 0.4
+slide_on_slope = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_td5bd"]
+size = Vector3(1, 2, 1)
+
+[node name="Npc" type="CharacterBody3D"]
+script = ExtResource("1_v1soc")
+NpcColor = Color(0, 0, 0, 1)
+JsonDialogFile = "res://resources/dialog/SampleDialog.json"
+
+[node name="NpcNavigation" type="NavigationAgent3D" parent="."]
+avoidance_enabled = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+shape = SubResource("CapsuleShape3D_g35ar")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.4, 0)
+shape = SubResource("SeparationRayShape3D_2p5cx")
+
+[node name="Robot" parent="." instance=ExtResource("1_dgxum")]
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_7xqwf")
+Connections = {
+"OnUse": {
+NodePath(".."): "_TalkTo"
+}
+}
+InteractText = "Talk To Robot"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_td5bd")
+
+[node name="DialogTriggerer" type="Node" parent="."]
+script = ExtResource("3_7xqwf")
+
+[node name="DialogLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+billboard = 1
+texture_filter = 1
+text = "adasd
+dasdasd"
+font_size = 30
+outline_size = 19
+vertical_alignment = 2
+autowrap_mode = 3
+
+[editable path="Robot"]
+[editable path="Robot/RobotModel"]

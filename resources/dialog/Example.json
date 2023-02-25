@@ -1,0 +1,14 @@
+{
+	"ContinuationOfLast": {
+		"Choice": {
+			"nah, not really": "#END"
+		},
+		"Text": "You can name these 'lines' anything you want. kinda cool right? ends here also."
+	},
+	"Start": {
+		"Choice": {
+			"yeah, Shudap": "#TO ContinuationOfLast"
+		},
+		"Text": "Start of the dialog"
+	}
+}

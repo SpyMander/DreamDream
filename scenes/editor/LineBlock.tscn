@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://dstr0lx3hhueq"]
+
+[ext_resource type="Script" path="res://scripts/EditorScripts/LineBlock.cs" id="1_mi81l"]
+[ext_resource type="PackedScene" uid="uid://cesk6a0uqbuv" path="res://scenes/editor/ChoiceLine.tscn" id="2_k33uu"]
+
+[node name="LineBlock" type="HBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+script = ExtResource("1_mi81l")
+
+[node name="LineNameEditor" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+placeholder_text = "name of line no spaces"
+selecting_enabled = false
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="TextLabel" type="Label" parent="PanelContainer"]
+layout_mode = 2
+text = "Text:"
+
+[node name="LineTextEdit" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+placeholder_text = "genius dialog here"
+selecting_enabled = false
+wrap_mode = 1
+scroll_smooth = true
+
+[node name="ChoiecPannel" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="ChoiceLabel" type="Label" parent="ChoiecPannel"]
+layout_mode = 2
+text = "Choice:"
+
+[node name="ChoicePannel" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="ChoicesBoxContainer" type="ScrollContainer" parent="ChoicePannel"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="ChoicesBox" type="VBoxContainer" parent="ChoicePannel/ChoicesBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="ChoiceEditButtons" type="HBoxContainer" parent="ChoicePannel/ChoicesBoxContainer/ChoicesBox"]
+layout_mode = 2
+
+[node name="AddChoice" type="Button" parent="ChoicePannel/ChoicesBoxContainer/ChoicesBox/ChoiceEditButtons"]
+layout_mode = 2
+text = "+
+"
+
+[node name="ChoiceLine" parent="ChoicePannel/ChoicesBoxContainer/ChoicesBox" instance=ExtResource("2_k33uu")]
+layout_mode = 2
+
+[node name="CollapseButton" type="Button" parent="."]
+layout_mode = 2
+text = "--"
+
+[node name="DeleteButton" type="Button" parent="."]
+layout_mode = 2
+text = "X"

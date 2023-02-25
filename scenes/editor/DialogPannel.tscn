@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://d04hlulqoll1x"]
+
+[ext_resource type="Script" path="res://scripts/EditorScripts/DialogPannel.cs" id="1_w2yyf"]
+
+[node name="ScrollContainer" type="ScrollContainer"]
+offset_top = 1.0
+offset_right = 1521.0
+offset_bottom = 375.0
+script = ExtResource("1_w2yyf")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
+layout_mode = 2
+
+[node name="AddLineButton" type="Button" parent="VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "      +AddLine      "
+
+[node name="TargetFileLineEdit" type="LineEdit" parent="VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "res://resources/dialog/Example.json"
+placeholder_text = "res://resources/dialog/Example.json"
+
+[node name="LoadButton" type="Button" parent="VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "                Load                 "
+
+[node name="SaveButton" type="Button" parent="VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "  !Save!  "
+
+[node name="LineBlockStacker" type="VBoxContainer" parent="VBoxContainer2"]
+layout_mode = 2

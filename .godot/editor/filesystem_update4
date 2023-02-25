@@ -1,0 +1,4 @@
+res://scenes/models/PlayerRobot.res
+res://scripts/objects/editor/Connecter.tres
+res://resources/Shaders/materials/RobotMetal.material
+res://resources/Shaders/Wood.tres

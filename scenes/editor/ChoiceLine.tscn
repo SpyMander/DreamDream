@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://cesk6a0uqbuv"]
+
+[ext_resource type="Script" path="res://scripts/EditorScripts/ChoiceLine.cs" id="1_mhau0"]
+
+[node name="ChoiceLine" type="HBoxContainer"]
+script = ExtResource("1_mhau0")
+
+[node name="ChoiceTextLine" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+placeholder_text = "text here"
+
+[node name="CommandLine" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+placeholder_text = "command here"
+
+[node name="DeleteButton" type="Button" parent="."]
+layout_mode = 2
+text = "x"

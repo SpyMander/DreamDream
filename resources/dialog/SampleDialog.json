@@ -1,0 +1,65 @@
+{
+	"AloneRampResponse": {
+		"Choice": {
+			"": "",
+			"Lets go back to the start": "#TO Start",
+			"Sadly, No": "#TO FakeTenseResponse"
+		},
+		"Text": "r u tense?"
+	},
+	"FakeTenseResponse": {
+
+	},
+	"FakeTenseResponse2": {
+		"Choice": {
+			"": "",
+			"Yeah Sorry": "#END"
+		},
+		"Text": "Its fine... totally"
+	},
+	"InfoAboutCars": {
+		"Choice": {
+			"": "",
+			"Damn, are they stock?": "#TO InfoAboutCars2"
+		},
+		"Text": "Yes, they are all mine, they are worth nothing though, free basiclly"
+	},
+	"InfoAboutCars2": {
+		"Choice": {
+			"": "",
+			"Allright, i might give it a spin": "#END"
+		},
+		"Text": "No, Twin-Turbo v12 Engines, modified to run on electricity, kinda dangerous, but hey, there free! "
+	},
+	"LostMoney": {
+
+	},
+	"LostMoney2": {
+		"Choice": {
+			"": "",
+			"Damn. thats sad": "#END",
+			"Lol Brokie": "#END",
+			"Skill issue": "#END",
+			"i don't know man, sounds like a you problem": "#END"
+		},
+		"Text": "Bad turn of events and now im here."
+	},
+	"Start": {
+		"Choice": {
+			"": "",
+			"Me say alone ramp": "#TO AloneRampResponse",
+			"No": "#END",
+			"Sure!": "#TO ThankfulLonelyRobot",
+			"What are these cars man, are they yours?": "#TO InfoAboutCars"
+		},
+		"Text": "Hi Talk to me Noob"
+	},
+	"ThankfulLonelyRobot": {
+		"Choice": {
+			"": "",
+			"(end convo)": "#END",
+			"You In the streets, why? broke?": "#TO LostMoney"
+		},
+		"Text": "Wow you contiued to talk to me, thanks and bye"
+	}
+}

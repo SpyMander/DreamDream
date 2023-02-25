@@ -1,0 +1,117 @@
+[gd_scene load_steps=11 format=3 uid="uid://cjqmulf7ahxk"]
+
+[ext_resource type="Texture2D" uid="uid://dt4ojyns2tr2u" path="res://icon.svg" id="1_2wcxg"]
+[ext_resource type="FontFile" uid="uid://bymiu1ja44od2" path="res://resources/fonts/SourceCodePro-Regular.ttf" id="2_6vhyd"]
+[ext_resource type="PackedScene" uid="uid://dfdbaqw6upvfy" path="res://scenes/menus/FactoryBackground.tscn" id="3_k1nig"]
+
+[sub_resource type="Environment" id="Environment_vxyla"]
+tonemap_mode = 3
+tonemap_exposure = 1.85
+tonemap_white = 2.88
+glow_enabled = true
+glow_strength = 1.6
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0061
+volumetric_fog_albedo = Color(0.870588, 0.870588, 0.870588, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_474wu"]
+variation_transform = Transform2D(3.688, 0, 1.015, 1.295, 0, 0)
+spacing_glyph = 20
+spacing_top = 10
+spacing_bottom = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6uuq"]
+bg_color = Color(0.239216, 0.458824, 0.188235, 1)
+border_width_left = 20
+border_width_right = 20
+border_color = Color(0, 0.32549, 0, 1)
+shadow_color = Color(0, 0, 0, 0.756863)
+shadow_size = 1
+shadow_offset = Vector2(5.163, 9.629)
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2mor"]
+bg_color = Color(0.321569, 0.611765, 0.254902, 1)
+border_width_left = 40
+border_width_right = 40
+border_color = Color(0, 0.32549, 0, 1)
+shadow_color = Color(0, 0, 0, 0.513726)
+shadow_size = 1
+shadow_offset = Vector2(5.163, 9.629)
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s0w8o"]
+bg_color = Color(0.249712, 0.481322, 0.19662, 1)
+border_width_left = 10
+border_width_right = 10
+border_color = Color(0, 0.32549, 0, 1)
+shadow_color = Color(0, 0, 0, 0.513726)
+shadow_offset = Vector2(5.163, 9.629)
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[sub_resource type="Theme" id="Theme_rli2j"]
+Button/fonts/font = SubResource("FontVariation_474wu")
+Button/styles/hover = SubResource("StyleBoxFlat_c6uuq")
+Button/styles/normal = SubResource("StyleBoxFlat_t2mor")
+Button/styles/pressed = SubResource("StyleBoxFlat_s0w8o")
+
+[sub_resource type="Theme" id="Theme_i260i"]
+Label/font_sizes/font_size = 31
+Label/fonts/font = ExtResource("2_6vhyd")
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vxyla")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_top = 585.0
+offset_right = 414.0
+offset_bottom = 1081.0
+theme = SubResource("Theme_rli2j")
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_2wcxg")
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Continue"
+
+[node name="LoadButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Load"
+
+[node name="NewGameButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "NewGame"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Quit"
+
+[node name="BetterStyle" type="VBoxContainer" parent="."]
+offset_right = 625.0
+offset_bottom = 444.0
+theme = SubResource("Theme_i260i")
+
+[node name="MainPannel" type="Control" parent="BetterStyle"]
+layout_mode = 2
+
+[node name="FactoryBackground" parent="." instance=ExtResource("3_k1nig")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.224951, 0.169198, 0.959567, 0, 0.984808, -0.173648, -0.97437, 0.0390624, 0.221534, 18.599, 3.845, 7.783)
+current = true

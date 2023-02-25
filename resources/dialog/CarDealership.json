@@ -1,0 +1,36 @@
+{
+	"Start":{
+		"Text":"Welcome to the political car dealership!",
+		"Choice":{"ye":"#TO DealQuestion"}
+		},
+	"DealQuestion":
+	{
+		"Text":"So, which car do you want?", 
+		"Choice":{
+		"I want the one on the far left":"#TO FarLeftCar", 
+		"I want the one on the far right":"#TO FarRightCar",
+		"I want the one in the middle":"#TO MiddleCar",
+		"I mean, does it matter? all of them can get you from point A to point B right?":"#TO NeitherCar"
+		} 
+	},
+	"FarLeftCar":
+	{
+		"Text":"Allright, you sure? Are you that type of guy?", 
+		"Choice":{"Nah, wait":"#TO DealQuestion", "Yeah":"#END"}
+	},
+	"FarRightCar":
+	{
+		"Text":"Allright, you sure? Are you that type of guy?", 
+		"Choice":{"Nah, wait":"#TO DealQuestion", "Yeah":"#END"}
+	},
+	"MiddleCar":
+	{
+		"Text":"Allright, you sure? Are you that type of a *bland* guy?", 
+		"Choice":{"Nah, wait":"#TO DealQuestion", "Yeah":"#END"}
+	},
+	"NeitherCar":
+	{
+		"Text":"Thats not how it works, you cant just *not* pick one. if i was you, I would pick the middle car",
+		"Choice":{"Mhm":"#TO DealQuestion"}
+	}
+}
