@@ -1,0 +1,14 @@
+{
+	"ContinuationOfLast": {
+		"Choice": {
+			"nah, not really": "#END"
+		},
+		"Text": "i really hope this works."
+	},
+	"Start": {
+		"Choice": {
+			"yeah, Shudap": "#TO ContinuationOfLast"
+		},
+		"Text": "This is a test of the new node graph way of using dialog boxes"
+	}
+}

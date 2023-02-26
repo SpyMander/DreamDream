@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://bna4rhkpoo1vp"]
+
+[ext_resource type="Script" path="res://scripts/EditorScripts/DialogueDataLine.cs" id="1_subky"]
+
+[node name="DialogueDataLine" type="HBoxContainer"]
+offset_right = 515.0
+offset_bottom = 31.0
+script = ExtResource("1_subky")
+
+[node name="ChoiceTextLine" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+placeholder_text = "NameHere"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ValueMode" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Value/Mode
+"
+
+[node name="SpinBox2" type="SpinBox" parent="VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+
+[node name="DeleteButton" type="Button" parent="."]
+layout_mode = 2
+text = "x"

@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk0q6aws1n4v6"]
+
+[ext_resource type="Script" path="res://scripts/EditorScripts/DialougeDataTab.cs" id="1_sxjyq"]
+[ext_resource type="PackedScene" uid="uid://cesk6a0uqbuv" path="res://scenes/editor/ChoiceLine.tscn" id="2_3f7vp"]
+
+[node name="Tab" type="TabBar"]
+script = ExtResource("1_sxjyq")
+
+[node name="ThingyBoxContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+offset_right = 600.0
+offset_bottom = 269.0
+
+[node name="ListBox" type="VBoxContainer" parent="ThingyBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="AddChoice" type="Button" parent="ThingyBoxContainer/ListBox"]
+layout_mode = 2
+text = "+
+"
+
+[node name="SlotEditButtons" type="HBoxContainer" parent="ThingyBoxContainer/ListBox"]
+layout_mode = 2
+
+[node name="ChoiceLine" parent="ThingyBoxContainer/ListBox" instance=ExtResource("2_3f7vp")]
+layout_mode = 2
+
+[node name="ChoiceLine2" parent="ThingyBoxContainer/ListBox" instance=ExtResource("2_3f7vp")]
+layout_mode = 2
+
+[node name="ChoiceLine3" parent="ThingyBoxContainer/ListBox" instance=ExtResource("2_3f7vp")]
+layout_mode = 2
