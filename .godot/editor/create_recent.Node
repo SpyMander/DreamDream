@@ -1,3 +1,8 @@
+SpinBox
+Label
+VBoxContainer
+Control
+MenuButton
 TabBar
 TabContainer
 TextEdit
@@ -25,9 +30,3 @@ HBoxContainer
 MenuBar
 LineEdit
 PanelContainer
-VBoxContainer
-ScrollContainer
-Label
-VScrollBar
-Label3D
-HFlowContainer

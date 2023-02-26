@@ -32,6 +32,91 @@ shape = SubResource("SeparationRayShape3D_2p5cx")
 
 [node name="Robot" parent="." instance=ExtResource("1_dgxum")]
 
+[node name="Skeleton3D" parent="Robot/RobotModel/RobotBones" index="0"]
+bones/0/rotation = Quaternion(0.000474749, 0.000474749, 0.000474749, 1)
+bones/1/rotation = Quaternion(2.68335e-07, 9.9748e-08, -0.707107, 0.707107)
+bones/2/rotation = Quaternion(0.000646865, 0.000645735, -0.680574, 0.732679)
+bones/3/rotation = Quaternion(1.41e-23, 2.13163e-14, -3.10585e-22, 1)
+bones/4/rotation = Quaternion(-1.10986e-07, -5.76012e-08, 0.707107, 0.707107)
+bones/5/rotation = Quaternion(0.000616206, 0.000615516, 0.648725, 0.761023)
+bones/6/rotation = Quaternion(-4.09419e-22, 5.32907e-15, -3.10589e-22, 1)
+bones/11/rotation = Quaternion(2.66925e-08, -2.66925e-08, 0.707107, 0.707107)
+bones/12/rotation = Quaternion(5.76012e-08, 1.10986e-07, -0.707107, 0.707107)
+bones/15/rotation = Quaternion(2.66925e-08, 2.66925e-08, -0.707107, 0.707107)
+bones/16/rotation = Quaternion(-1.10986e-07, 5.76011e-08, 0.707107, 0.707107)
+
+[node name="BoneAttachment3D" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="0"]
+transform = Transform3D(-0.997214, 0.074584, -0.000877057, -0.0745829, -0.997216, -0.00101705, -0.000950469, -0.00094881, 0.999999, 2.3323, -0.178789, 0.628841)
+
+[node name="BoneAttachment3D2" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="1"]
+transform = Transform3D(-0.997215, 0.0745839, -0.000877058, -0.0745829, -0.997215, -0.00101706, -0.00095047, -0.000948809, 1, 2.12828, 2.54908, 0.631436)
+
+[node name="BoneAttachment3D3" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="2"]
+transform = Transform3D(-0.997215, 0.0745839, -0.000877058, -0.0745829, -0.997215, -0.00101706, -0.00095047, -0.000948809, 1, 2.12828, 2.54908, 0.631436)
+
+[node name="BoneAttachment3D4" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="3"]
+transform = Transform3D(0.000949046, 0.999999, 0.00094971, -0.999999, 0.000949948, -0.000949568, -0.000950468, -0.000948808, 0.999999, -0.00241728, 2.54706, 0.633458)
+
+[node name="BoneAttachment3D5" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="4"]
+transform = Transform3D(-0.987539, -0.157373, 0.00108735, 0.157374, -0.98754, 0.000787499, 0.000949873, 0.00094881, 0.999999, -2.56361, -0.156372, 0.638075)
+
+[node name="BoneAttachment3D6" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="5"]
+transform = Transform3D(-0.987539, -0.157373, 0.00108735, 0.157374, -0.987539, 0.0007875, 0.000949873, 0.000948809, 0.999999, -2.13311, 2.54503, 0.63548)
+
+[node name="BoneAttachment3D7" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="6"]
+transform = Transform3D(-0.987539, -0.157373, 0.00108735, 0.157374, -0.987539, 0.0007875, 0.000949873, 0.000948809, 0.999999, -2.13311, 2.54503, 0.63548)
+
+[node name="BoneAttachment3D8" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="7"]
+transform = Transform3D(-0.000949046, -0.999999, 0.00094971, 0.999999, -0.000949948, -0.000948971, 0.000949872, 0.000948808, 0.999999, -0.00241728, 2.54706, 0.633458)
+
+[node name="BoneAttachment3D9" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="8"]
+transform = Transform3D(0.999999, -0.000949047, 0.000949949, 0.000949948, 0.999999, -0.000949084, -0.000949047, 0.000949979, 1, -0.00598588, 4.0241, 0.0322246)
+
+[node name="BoneAttachment3D10" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="9"]
+transform = Transform3D(0.999999, -0.000949047, 0.000949949, 0.000949948, 0.999999, -0.000949085, -0.000949047, 0.000949979, 1, -0.00355581, 3.14303, 0.0299987)
+
+[node name="BoneAttachment3D11" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="10"]
+transform = Transform3D(0.999999, -0.000949046, 0.000949948, 0.000949948, 0.999999, -0.000949047, -0.000949047, 0.000949948, 0.999999, 0, 0, 0.631038)
+
+[node name="BoneAttachment3D12" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="11"]
+transform = Transform3D(0.999999, -0.000949046, 0.000949948, 0.000949948, 0.999999, -0.000949047, -0.000949047, 0.000949948, 0.999999, 0, 0, 0.631038)
+
+[node name="BoneAttachment3D13" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="12"]
+transform = Transform3D(1, -1.42109e-14, 1.98952e-13, -3.2211e-14, -1.00001, 7.10543e-15, -1.98952e-13, -2.84219e-14, -0.999999, -1.5, -8.08678, 0.631037)
+
+[node name="BoneAttachment3D14" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="13"]
+transform = Transform3D(1, -7.10544e-15, 2.38419e-07, -2.51055e-14, -1, 7.10544e-15, 2.38418e-07, -2.84218e-14, -1, -1.5, -4.30508, 0.631037)
+
+[node name="BoneAttachment3D15" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="14"]
+transform = Transform3D(1, -7.10544e-15, 2.38419e-07, -2.51055e-14, -1, 7.10544e-15, 2.38418e-07, -2.84218e-14, -1, -1.5, -4.30508, 0.631037)
+
+[node name="BoneAttachment3D16" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="15"]
+transform = Transform3D(1, 0, 2.38419e-07, -1.80001e-14, -1, 0, 2.38418e-07, -2.13163e-14, -1, -1.5, -1.29434, 0.631038)
+
+[node name="BoneAttachment3D17" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="16"]
+transform = Transform3D(1, 0, 2.38419e-07, -1.80001e-14, -1, 0, 2.38418e-07, -2.13163e-14, -1, -1.5, -1.29434, 0.631038)
+
+[node name="BoneAttachment3D18" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="17"]
+transform = Transform3D(0, -1, 0, -1, 0, 7.54979e-08, -7.54979e-08, 0, -1, 0, -1.29434, 0.631038)
+
+[node name="BoneAttachment3D19" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="18"]
+transform = Transform3D(1, -1.69406e-21, 4.54747e-13, -1.80001e-14, -0.999999, -2.13163e-14, -4.26326e-13, 7.10542e-15, -1, 1.5, -8.08849, 0.631039)
+
+[node name="BoneAttachment3D20" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="19"]
+transform = Transform3D(1, -1.69407e-21, 2.38419e-07, -1.80001e-14, -1, -2.13163e-14, 2.38419e-07, 7.10543e-15, -1, 1.5, -4.30508, 0.631038)
+
+[node name="BoneAttachment3D21" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="20"]
+transform = Transform3D(1, -1.69407e-21, 2.38419e-07, -1.80001e-14, -1, -2.13163e-14, 2.38419e-07, 7.10543e-15, -1, 1.5, -4.30508, 0.631038)
+
+[node name="BoneAttachment3D22" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="21"]
+transform = Transform3D(1, 0, 2.38419e-07, -1.80001e-14, -1, -2.84217e-14, 2.38419e-07, 1.42109e-14, -1, 1.5, -1.29434, 0.631039)
+
+[node name="BoneAttachment3D23" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="22"]
+transform = Transform3D(1, 0, 2.38419e-07, -1.80001e-14, -1, -2.84217e-14, 2.38419e-07, 1.42109e-14, -1, 1.5, -1.29434, 0.631039)
+
+[node name="BoneAttachment3D24" parent="Robot/RobotModel/RobotBones/Skeleton3D" index="23"]
+transform = Transform3D(0, 1, 0, 1, 0, 7.54979e-08, 7.54979e-08, 0, -1, 0, -1.29434, 0.631038)
+
 [node name="Area3D" type="Area3D" parent="."]
 collision_layer = 2
 collision_mask = 2

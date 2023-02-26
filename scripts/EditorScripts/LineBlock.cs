@@ -45,9 +45,9 @@ public partial class LineBlock : GraphNode
 
 		LineNameEditor = GetNode<LineEdit>("LineNameEditor");
 
-		ChoicesBox = GetNode<VBoxContainer>("ChoicePannel/ChoicesBoxContainer/ChoicesBox");
+		ChoicesBox = GetNode<VBoxContainer>("TabContainer/Choices/ChoicesBoxContainer/ChoicesBox");
 
-		AddChoiceButton = GetNode<Button>("ChoicePannel/ChoicesBoxContainer/ChoicesBox/ChoiceEditButtons/AddChoice");
+		AddChoiceButton = GetNode<Button>("TabContainer/Choices/ChoicesBoxContainer/ChoicesBox/AddChoice");
 
 
 		LineTextEdit = GetNode<TextEdit>("LineTextEdit");
@@ -140,6 +140,10 @@ public partial class LineBlock : GraphNode
 		return ChoiceLineInstance;
 	}
 
+	// private HBoxContainer AddRequirement()
+	// {
+
+	// }
 	private void DeleteBlock()
 	{
 		QueueFree();

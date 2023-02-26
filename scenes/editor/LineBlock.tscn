@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dstr0lx3hhueq"]
 
 [ext_resource type="Script" path="res://scripts/EditorScripts/LineBlock.cs" id="1_mi81l"]
-[ext_resource type="PackedScene" uid="uid://cesk6a0uqbuv" path="res://scenes/editor/ChoiceLine.tscn" id="2_k33uu"]
+[ext_resource type="PackedScene" uid="uid://dk0q6aws1n4v6" path="res://scenes/editor/DataTab.tscn" id="2_wnexg"]
 
 [node name="LineBlock" type="GraphNode"]
 custom_minimum_size = Vector2(0, 70)
@@ -12,7 +12,7 @@ slot/0/left_enabled = true
 slot/0/left_type = 0
 slot/0/left_color = Color(1, 1, 1, 1)
 slot/0/left_icon = null
-slot/0/right_enabled = false
+slot/0/right_enabled = true
 slot/0/right_type = 0
 slot/0/right_color = Color(1, 1, 1, 1)
 slot/0/right_icon = null
@@ -107,85 +107,23 @@ custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
 tab_alignment = 1
 
-[node name="Choices" type="TabBar" parent="TabContainer"]
+[node name="Choices" parent="TabContainer" instance=ExtResource("2_wnexg")]
 layout_mode = 2
 
-[node name="ChoicesBoxContainer" type="ScrollContainer" parent="TabContainer/Choices"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-offset_right = 600.0
-offset_bottom = 269.0
-
-[node name="ChoicesBox" type="VBoxContainer" parent="TabContainer/Choices/ChoicesBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-
-[node name="AddChoice" type="Button" parent="TabContainer/Choices/ChoicesBoxContainer/ChoicesBox"]
-layout_mode = 2
-text = "+
-"
-
-[node name="ChoiceEditButtons" type="HBoxContainer" parent="TabContainer/Choices/ChoicesBoxContainer/ChoicesBox"]
-layout_mode = 2
-
-[node name="ChoiceLine" parent="TabContainer/Choices/ChoicesBoxContainer/ChoicesBox" instance=ExtResource("2_k33uu")]
-layout_mode = 2
-
-[node name="ChoiceLine2" parent="TabContainer/Choices/ChoicesBoxContainer/ChoicesBox" instance=ExtResource("2_k33uu")]
-layout_mode = 2
-
-[node name="ChoiceLine3" parent="TabContainer/Choices/ChoicesBoxContainer/ChoicesBox" instance=ExtResource("2_k33uu")]
-layout_mode = 2
-
-[node name="DialogeDataAdd" type="TabBar" parent="TabContainer"]
+[node name="AddDialougeData" parent="TabContainer" instance=ExtResource("2_wnexg")]
 visible = false
 layout_mode = 2
+TypeOfTab = 2
 
-[node name="ChoicesBoxContainer" type="ScrollContainer" parent="TabContainer/DialogeDataAdd"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-offset_right = 600.0
-offset_bottom = 269.0
-
-[node name="ChoicesBox" type="VBoxContainer" parent="TabContainer/DialogeDataAdd/ChoicesBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-
-[node name="AddChoice" type="Button" parent="TabContainer/DialogeDataAdd/ChoicesBoxContainer/ChoicesBox"]
-layout_mode = 2
-text = "+
-"
-
-[node name="ChoiceEditButtons" type="HBoxContainer" parent="TabContainer/DialogeDataAdd/ChoicesBoxContainer/ChoicesBox"]
-layout_mode = 2
-
-[node name="ChoiceLine" parent="TabContainer/DialogeDataAdd/ChoicesBoxContainer/ChoicesBox" instance=ExtResource("2_k33uu")]
-layout_mode = 2
-
-[node name="Requirements" type="TabBar" parent="TabContainer"]
+[node name="Requirements" parent="TabContainer" instance=ExtResource("2_wnexg")]
 visible = false
 layout_mode = 2
+TypeOfTab = 1
 
-[node name="ChoicesBoxContainer" type="ScrollContainer" parent="TabContainer/Requirements"]
-custom_minimum_size = Vector2(300, 0)
+[node name="Trigger" parent="TabContainer" instance=ExtResource("2_wnexg")]
+visible = false
 layout_mode = 2
-offset_right = 600.0
-offset_bottom = 269.0
-
-[node name="ChoicesBox" type="VBoxContainer" parent="TabContainer/Requirements/ChoicesBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-
-[node name="AddChoice" type="Button" parent="TabContainer/Requirements/ChoicesBoxContainer/ChoicesBox"]
-layout_mode = 2
-text = "+
-"
-
-[node name="ChoiceEditButtons" type="HBoxContainer" parent="TabContainer/Requirements/ChoicesBoxContainer/ChoicesBox"]
-layout_mode = 2
-
-[node name="ChoiceLine" parent="TabContainer/Requirements/ChoicesBoxContainer/ChoicesBox" instance=ExtResource("2_k33uu")]
-layout_mode = 2
+MaxChildren = 1
 
 [node name="ChoicePannel" type="PanelContainer" parent="."]
 custom_minimum_size = Vector2(0, 100)
